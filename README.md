@@ -1,3 +1,3 @@
-# Replugged theme template
+# Flashcord Legacy
 
-See the [theme development guide](https://guide.replugged.dev/docs/themes/getting-started) for more information on using this template.
+Please don't. This is basically just here for archival.
