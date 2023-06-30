@@ -1,7 +1,7 @@
 {
   "name": "Flashcord Legacy",
   "version": "1.0.0",
-  "description": "BUT CAN YOUR PC RUN FLASHCORD LEGACY",
+  "description": "BUT CAN YOUR PC RUN FLASHCORD LEGACY?",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
