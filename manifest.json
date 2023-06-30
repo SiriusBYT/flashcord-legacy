@@ -1,16 +1,16 @@
 {
-  "id": "dev.replugged.ThemeTemplate",
-  "name": "Theme Template",
-  "description": "A theme template",
+  "id": "com.sirio-network.flashcordlegacy",
+  "name": "Flashcord Legacy",
+  "description": "BUT CAN YOUR PC RUN FLASHCORD LEGACY?",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
+    "name": "SiriusBYT",
+    "discordID": "311057290562371586",
     "github": "replugged-org"
   },
   "version": "1.0.0",
   "updater": {
     "type": "github",
-    "id": "replugged-org/theme-template"
+    "id": "SiriusBYT/flashcord-legacy"
   },
   "license": "MIT",
   "type": "replugged-theme",
