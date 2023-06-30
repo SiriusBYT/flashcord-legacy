@@ -7,3 +7,8 @@ And for the memes because this is so poorly optimized that even an AMD Ryzen 5 2
 If you want an improvised CPU Stress Test, here you go.
 
 [![Install in Replugged](https://img.shields.io/badge/-Install%20in%20Replugged-blue?style=for-the-badge&logo=none)](https://replugged.dev/install?identifier=SiriusBYT/flashcord-legacy&source=github)
+
+It doesn't work right now and I can't be bothered so add this to your quick css:
+
+
+@import url('https://sirio-network.com/flashcord/legacy/fc-main.css');
