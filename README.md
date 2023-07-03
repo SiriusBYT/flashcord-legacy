@@ -8,6 +8,9 @@ If you want an improvised CPU Stress Test, here you go.
 
 [![Install in Replugged](https://img.shields.io/badge/-Install%20in%20Replugged-blue?style=for-the-badge&logo=none)](https://replugged.dev/install?identifier=SiriusBYT/flashcord-legacy&source=github)
 
+Light theme only with a horrible color scheme, dark theme will flashbang you. this has the basic idea of ![the new flashcord](https://github.com/SiriusBYT/flashcord) though.
+
+
 
 also license is enforced here cuz i stole some code back then so woo...
 
