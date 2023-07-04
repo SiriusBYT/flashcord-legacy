@@ -1,1 +1,914 @@
-@import url(https://sirio-network.com/flashcord/legacy/fc-main.css);
+/* Flashcord - Roboto Font Override */
+
+@font-face { font-family:Roboto; font-style:normal; font-weight:300; src:url(https://fonts.googleapis.com/css2?family=Roboto)}
+  @font-face { font-family:Roboto; font-style:italic; font-weight:300; src:url(https://fonts.googleapis.com/css2?family=Roboto)}
+  @font-face { font-family:Roboto; font-style:normal; font-weight:400; src:url(https://fonts.googleapis.com/css2?family=Roboto)}
+  @font-face { font-family:Roboto; font-style:italic; font-weight:400; src:url(https://fonts.googleapis.com/css2?family=Roboto)}
+  @font-face { font-family:Roboto; font-style:normal; font-weight:500; src:url(https://fonts.googleapis.com/css2?family=Roboto)}
+  @font-face { font-family:Roboto; font-style:italic; font-weight:500; src:url(https://fonts.googleapis.com/css2?family=Roboto)}
+  :root {
+    --font-primary: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: Roboto, "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-headline: Roboto, "ABC Ginto Nord", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #FFFFFF;
+  }
+/* Flashcord - Keyframes Animations */
+
+  /* Tooltip Pop-Ups Animation */
+  .layer-2BGhQ8 {
+    animation-name: FadeFromTop;
+    animation-duration: 100ms;
+  }
+
+  /* Pinned PopUp Animations + Wider */
+  .messagesPopoutWrap-3zryHW {
+    animation-name: CRTPopIn;
+    animation-duration: 200ms;
+    transform: scale(1, 1);
+    max-width: 1280px !important;
+    width: auto;
+    max-height: 720px !important;
+    height: auto;
+  }
+
+  /* New Message Pop-in */
+  .messageListItem-ZZ7v6g {
+    animation-name: ChatMSGIn;
+    animation-duration: 1000ms;
+    left: 0px;
+    position: relative;
+  }
+
+  /* Declared Keyframes */
+
+  @keyframes FadeFromTop { /* IS THAT A WEBSIRIUS REFERENCE?i,I?,i,?I https://sirio-network.com/css/SiriusBYT-Home.css */
+      0% {
+        opacity: 0.25;
+        transform: translateY(-2vw)
+        
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(-0vw)
+      }
+  }
+
+  @keyframes CRTPopIn {
+    0% {
+      transform: scale(1, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  @keyframes ChatMSGIn {
+    0% {
+      opacity: 0;
+      transform: translatex(5vw);
+    }
+    100% {  
+      opacity: 1;
+      transform: translatex(0vw);
+    }
+  }
+/* Flashcord - Light Theme */
+
+ .theme-light {
+      --home-background: #FFFFFF;
+      
+      --header-primary: #FF42FF;
+      --header-secondary: #FFAAFF;
+      --text-normal: #FF69FF;
+      --text-muted: #FFBBFF;
+      --text-link: #FF69FF;
+      --text-link-low-saturation: #00FFFF; /* Unknown Location */
+      --text-positive: #00FF00;
+      --text-warning: #FF0000; /* Unknown Location */
+      --text-danger: #FFFF00; /* Unknown Location */
+      --text-brand: #AA00FF;
+      
+      --interactive-normal: #FF88FF;
+      --interactive-hover: #FF00FF;
+      --interactive-active: #DD00DD;
+      --interactive-muted: #FF0042;
+      
+      --mention-foreground: #ff69ff;
+      --mention-background: #ffeeFF;
+      
+      --background-primary: #FFFFFF;
+      --background-secondary: #FFFFFF;
+      --background-secondary-alt: #FFFFFF;
+      --background-tertiary: #FFFFFF;
+      --background-accent: #FF99FF;
+      --background-floating: #FFF9FF;
+      --background-nested-floating: ##FF0000; /* Unknown Location */
+      
+      --chat-background: #00FF00; /* Unknown Location */
+      --chat-border: #00FF00; /* Unknown Location */
+      --chat-input-container-background: #00FF00; /* Unknown Location */
+      
+      --background-modifier-hover: #FFF0FF;
+      --background-modifier-active: #FFE0FF;
+      --background-modifier-selected: #FFE9FF;
+      --background-modifier-accent: #EE99EE;
+      
+      --info-positive-background: hsl(var(--status-green-630-hsl)/0.05);
+      --info-positive-foreground: var(--status-green-630);
+      --info-positive-text: var(--black-500);
+      --info-warning-background: hsl(var(--status-yellow-600-hsl)/0.1);
+      --info-warning-foreground: var(--status-yellow-600);
+      --info-warning-text: var(--black-500);
+      --info-danger-background: #00FF00; /* Unknown Location */
+      --info-danger-foreground: var(--status-red-530);
+      --info-danger-text: var(--black-500);
+      --info-help-background: #FFF0FF;
+      --info-help-foreground: #00AAff;
+      --info-help-text: var(--black-500);
+        
+      --status-positive-background: var(--status-green-660);
+      --status-positive-text: var(--white-500);
+      --status-warning-background: var(--status-yellow-600);
+      --status-warning-text: var(--white-500);
+      --status-danger-background: var(--status-red-530);
+      --status-danger-text: var(--white-500);
+      --status-danger: var(--status-red-530);
+      --status-positive: var(--status-green-630);
+      --status-warning: var(--status-yellow-600);
+      
+      --button-danger-background: #FF0000;
+      --button-danger-background-hover: #EE0000;
+      --button-danger-background-active: #AA0000;
+      --button-danger-background-disabled: #00FF00; /* Unknown Location */
+      
+      --button-positive-background: var(--status-green-660);
+      --button-positive-background-hover: var(--status-green-730);
+      --button-positive-background-active: var(--status-green-760);
+      --button-positive-background-disabled: var(--status-green-660);
+      
+      --button-secondary-background: #FFAAFF;
+      --button-secondary-background-hover: #FF99FF;
+      --button-secondary-background-active: #FF69FF;;
+      --button-secondary-background-disabled: #00FFFF;
+      
+      --button-outline-danger-text: #000000;
+      --button-outline-danger-border: #FF0000;
+      --button-outline-danger-background: #690000;
+      --button-outline-danger-background-hover: #000000;
+      --button-outline-danger-text-hover: #FFFFFF;
+      --button-outline-danger-border-hover: #FF0000;
+      --button-outline-danger-background-active: #690000;
+      --button-outline-danger-text-active: #FFFFFF;
+      --button-outline-danger-border-active: #FF0000;
+      
+      --button-outline-positive-text: var(--black-500);
+      --button-outline-positive-border: var(--status-green-630);
+      --button-outline-positive-background: hsl(var(--white-500-hsl)/0);
+      --button-outline-positive-background-hover: var(--status-green-660);
+      --button-outline-positive-text-hover: var(--white-500);
+      --button-outline-positive-border-hover: var(--status-green-660);
+      --button-outline-positive-background-active: var(--status-green-730);
+      --button-outline-positive-text-active: var(--white-500);
+      --button-outline-positive-border-active: var(--status-green-730);
+      
+      --button-outline-brand-text: #000000; /* Unknown Location */
+      --button-outline-brand-border: #00AAff; /* Unknown Location */
+      --button-outline-brand-background: #00AAff; /* Unknown Location */
+      --button-outline-brand-background-hover: #00CCff; /* Unknown Location */
+      --button-outline-brand-text-hover: #FFFFFF; /* Unknown Location */
+      --button-outline-brand-border-hover: #00CCff; /* Unknown Location */
+      --button-outline-brand-background-active: #00DDff; /* Unknown Location */
+      --button-outline-brand-text-active: #FFFFFF; /* Unknown Location */
+      --button-outline-brand-border-active: #00DDff; /* Unknown Location */
+    
+      
+      --button-outline-primary-text: #FFAAFF;
+      --button-outline-primary-border: #FFEEFF;
+      --button-outline-primary-background: #FFEEFF;
+      --button-outline-primary-background-hover: #FFF9FF;
+      --button-outline-primary-text-hover: #FFAAFF;
+      --button-outline-primary-border-hover: #FFF9FF;
+      --button-outline-primary-background-active: #FF69FF;
+      --button-outline-primary-text-active: #FFFFFF;
+      --button-outline-primary-border-active: #FF69FF;
+      
+      --modal-background: #FFFFFF;
+      --modal-footer-background: #FFFFFF;
+      
+      --scrollbar-thin-thumb: #FFAAFF;
+      --scrollbar-thin-track: #FFFFFF;
+      --scrollbar-auto-thumb: #FFAAFF;
+      --scrollbar-auto-track: #FFFFFF;
+      --scrollbar-auto-scrollbar-color-thumb: #00FF00; /* Unknown Location */
+      --scrollbar-auto-scrollbar-color-track: #00FF00; /* Unknown Location */
+      
+      --input-background: #FFF9FF;
+      --input-placeholder-text: #FF69FF;
+    
+      --logo-primary: #00FF00; /* Unknown Location */
+      
+      --focus-primary: #FFAAFF;
+      
+      --control-brand-foreground: #00FF00; /* Unknown Location */
+      --control-brand-foreground-new: #00FF00; /* Unknown Location */
+      
+      --background-mentioned: #ffF0ff;
+      --background-mentioned-hover: #ffE9ff;
+      --background-message-hover: #ffF9ff;
+      --background-message-automod: #F90000; /* Untested Location */
+      --background-message-automod-hover: #FF0000; /* Untested Location */
+      --background-message-highlight: #FFE9FF;
+      --background-message-highlight-hover: #00FF00; /* Unknown Location */
+      
+      --channels-default: #ff69ff;
+      --channel-icon: #FF69FF;
+      --channel-text-area-placeholder: #FFDDFF;
+      --channeltextarea-background: #FFFAFF;
+      
+      --activity-card-background: #FFF0FF; /* Unknown Location */
+      
+      --textbox-markdown-syntax: #AA00FF;
+      
+      --spoiler-revealed-background: #00FF00; /* Unknown Location */
+      --spoiler-hidden-background: #00FF00; /* Unknown Location */
+    }
+    
+    
+    
+    /* Flashcord - Random Patches */
+
+    /* Compact Title Bar */
+    .withFrame-2dL45i {
+        margin-top: 4px;
+        height: 10px;
+    }
+
+    /* Timestamp Floating Conflict Fix */
+    .username-h_Y3Us {
+        float: left;
+    }
+
+    /* Badges Everywhere Plugin Floating Conflict Fix */
+    .badges {
+        float: right;
+        display: flex;
+    }
+
+    /* Platform Indicators and Staff Tag Plugin Floating Conflict Fix */
+    .platform-indicators, .stafftags {
+        float: right;
+    }
+
+    /* More light Profile Modal Background */
+    .backdrop-2ByYRN, .withLayer-2VVmpp {
+        opacity: 1 !important;
+        filter: blur(512px);
+    }
+
+    /* ZIndex Conflict fix in Friends Tab */
+    .container-2cd8Mz {
+        z-index: 1;
+    }
+
+    /* No Boosted Line */
+    .container-2giAcK {
+        display: none;
+    }
+    
+    /* Channel Category Centered */
+    .overflow-1wOqNV {
+        text-align: center;
+    }
+
+    /* Member List Role Aligned to Right and Compact Padding */
+    .membersGroup-2eiWxl{
+        text-align: right;
+        padding: 8px 8px 0 64px;
+        height: auto;
+    }
+
+    /* No Discord Logo, cause it ugly */
+    .wordmarkWindows-2dq6rw {
+        display: none;
+    }
+
+    /* More compact and more thioc seperators*/
+    .side-1lrxIh .separator-2N511j {
+        margin: 4px;
+        height: 2px;
+    }
+
+    /* Make Chat Bar more Compact */
+    .channelTextArea-1FufC0 {
+        margin-bottom: 8px;
+    }
+
+    /* Mention background being gone fix */
+    .mention-3XBnnZ {
+        background-color: #FF0000;
+    }
+
+    /* I have no fucking clue what this does */
+    .numberBadge-37OJ3S {
+        background-color: #FF0000 !important;
+    }
+    
+    /* NO Clue what this does but it was after "Channel List Slide on Hover" */
+    .panels-3wFtMD {
+        position: relative;
+        left: 7px;
+        margin-top: -15px;
+    }
+  /* Flashcord - Settings Modal */
+
+    /* Configuration Code */
+    .sidebarRegion-1VBisG, .sidebarRegionScroller-FXiQOh {
+        display: auto;
+        max-width: 220px;
+    }
+    :root {
+        --settingsmodalbackground: transparent;            
+        --settingsmodalwidth: 90vw;
+        --settingsmodalheight: 50vw;
+    }
+
+    /* Wider Settings Modal */
+    .contentColumn-1C7as6, .customColumn-2n-oKU, .contentRegion-3HkfJJ {
+        max-width: 100%; /* I don't know why */
+        min-width: 1%; /* I don't wanna know why */
+        max-height: 100%; /* But this shit won't work */
+        min-height: 100%; /* Unless I do this attrochous sin. */
+    }
+
+    /* No idea what this does too but it was after "Wider Settings Modal"*/
+    #app-mount .layer-86YKbF ~ .layer-86YKbF .contentColumnDefault-3eyv5o {
+        padding: 0px 0px !important;
+    }
+
+    /* Centered Modal */
+    .contentRegionShownSidebar-fHXkEg {
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* More Compact Modal */
+    .layer-86YKbF .contentColumnDefault-3eyv5o {
+        padding: 10px 0px !important;
+    }
+    
+/* Flashcord - Bubble Bar Code */
+
+/* Bubble Bar Chat Bar (Stolen Code) */
+  :root {
+    /* || Main */
+    --channeltextarea-rounding: 25px;
+    --channeltextarea-background: var(--background-secondary-alt);
+    --channeltextarea-border: var(--background-secondary);
+    /* || Default Buttons */
+    --channeltextarea-button-rounding: 50%;
+    --channeltextarea-button-icon: var(--interactive-normal);
+    --channeltextarea-button-background: var(--channeltextarea-background);
+    --channeltextarea-button-hover: var(--background-tertiary);
+    /* || Accents */
+    --channeltextarea-caret: var(--brand-experiment-400);
+    --channeltextarea-sendbutton-icon: var(--brand-experiment-130);
+    --channeltextarea-sendbutton-background: var(--brand-experiment);
+    --channeltextarea-sendbutton-hover: var(--brand-experiment-460);
+    --channeltextarea-sendbutton-active: var(--brand-experiment-530);
+  }
+
+  .base-2jDfDU .channelTextArea-220_Gz,
+  .base-2jDfDU .channelTextArea-1FufC0,
+  .base-2jDfDU .scrollableContainer-15eg7h {
+    background-color: transparent;
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y {
+    margin-right: -5px;
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .textArea-2CLwUE {
+    margin-right: 5px;
+    border-radius: var(--channeltextarea-rounding);
+    background-color: var(--channeltextarea-background);
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .textArea-2CLwUE .fontSize16Padding-XoMpjI {
+    left: 16px;
+    padding-left: 0;
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .textArea-2CLwUE .slateTextArea-27tjG0 {
+    margin-right: 44px;
+    caret-color: var(--channeltextarea-caret);
+    border-radius: var(--channeltextarea-rounding);
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .buttons-uaqb-5 {
+    margin-right: 0;
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .button-ejjZWC {
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+    margin-left: 0;
+    padding: 0;
+    border-radius: var(--channeltextarea-button-rounding);
+    background-color: var(--channeltextarea-button-background);
+    transition: background-color ease-in-out 125ms;
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .button-ejjZWC:hover:not([disabled]),
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .button-ejjZWC:active:not([disabled]) {
+    background-color: var(--channeltextarea-button-hover);
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .button-ejjZWC.emojiButton-1fMsf3 {
+    background-color: transparent;
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .button-ejjZWC .sprite-2lxwfc {
+    margin-bottom: 2px;
+    background-color: var(--channeltextarea-button-icon);
+    background-size: unset !important;
+    background-position: unset !important;
+    background-image: none !important;
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40NzcgMiAyIDYuNDc3IDIgMTJDMiAxNy41MjIgNi40NzcgMjIgMTIgMjJDMTcuNTIzIDIyIDIyIDE3LjUyMiAyMiAxMkMyMiA2LjQ3NyAxNy41MjMgMiAxMiAyWk04IDZDOS4xMDQgNiAxMCA2Ljg5NiAxMCA4QzEwIDkuMTA1IDkuMTA0IDEwIDggMTBDNi44OTYgMTAgNiA5LjEwNSA2IDhDNiA2Ljg5NiA2Ljg5NiA2IDggNlpNMTggMTRDMTggMTYuNjE3IDE1LjE0IDE5IDEyIDE5QzguODYgMTkgNiAxNi42MTcgNiAxNFYxM0gxOFYxNFpNMTYgMTBDMTQuODk2IDEwIDE0IDkuMTA1IDE0IDhDMTQgNi44OTYgMTQuODk2IDYgMTYgNkMxNy4xMDQgNiAxOCA2Ljg5NiAxOCA4QzE4IDkuMTA1IDE3LjEwNCAxMCAxNiAxMFoiIGZpbGw9ImN1cnJlbnRDb2xvciIvPgo8L3N2Zz4=);
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40NzcgMiAyIDYuNDc3IDIgMTJDMiAxNy41MjIgNi40NzcgMjIgMTIgMjJDMTcuNTIzIDIyIDIyIDE3LjUyMiAyMiAxMkMyMiA2LjQ3NyAxNy41MjMgMiAxMiAyWk04IDZDOS4xMDQgNiAxMCA2Ljg5NiAxMCA4QzEwIDkuMTA1IDkuMTA0IDEwIDggMTBDNi44OTYgMTAgNiA5LjEwNSA2IDhDNiA2Ljg5NiA2Ljg5NiA2IDggNlpNMTggMTRDMTggMTYuNjE3IDE1LjE0IDE5IDEyIDE5QzguODYgMTkgNiAxNi42MTcgNiAxNFYxM0gxOFYxNFpNMTYgMTBDMTQuODk2IDEwIDE0IDkuMTA1IDE0IDhDMTQgNi44OTYgMTQuODk2IDYgMTYgNkMxNy4xMDQgNiAxOCA2Ljg5NiAxOCA4QzE4IDkuMTA1IDE3LjEwNCAxMCAxNiAxMFoiIGZpbGw9ImN1cnJlbnRDb2xvciIvPgo8L3N2Zz4=);
+    transform: none !important;
+    filter: none !important;
+  }
+  .base-2jDfDU .channelTextArea-1VQBuV .inner-NQg18Y .button-ejjZWC svg {
+    color: var(--channeltextarea-button-icon);
+  }
+
+  .channelTextArea-220_Gz .buttonContainer-2lnNiN {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .channelTextArea-220_Gz .buttonContainer-2lnNiN .button-3BaQ4X {
+    background-color: transparent !important;
+  }
+
+  .chatContent-3KubbW .jumpToPresentBar-1cEnH0 {
+    display: block;
+    left: calc(100% - 50px);
+    width: 0;
+    height: 0;
+    bottom: 50px;
+  }
+  .chatContent-3KubbW .jumpToPresentBar-1cEnH0 .barButtonMain-2GIx4o,
+  .chatContent-3KubbW .jumpToPresentBar-1cEnH0 .spinner-2RT7ZC {
+    display: none;
+  }
+  .chatContent-3KubbW .jumpToPresentBar-1cEnH0 .barButtonAlt-TQoCdZ {
+    top: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+  .chatContent-3KubbW .jumpToPresentBar-1cEnH0 .barButtonAlt-TQoCdZ .barButtonIcon-bMvzp2 {
+    z-index: 100;
+    position: absolute;
+    display: unset;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    padding: 9px;
+    border-radius: 50px;
+    color: var(--interactive-normal);
+    background-color: var(--background-tertiary);
+  }
+  .chatContent-3KubbW .form-3gdLxP {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--channeltextarea-border);
+  }
+  .chatContent-3KubbW .form-3gdLxP::before {
+    display: none;
+  }
+  .chatContent-3KubbW .form-3gdLxP .channelTextArea-1FufC0 {
+    margin: 0;
+    padding: 0;
+  }
+  .chatContent-3KubbW .form-3gdLxP .channelTextArea-1FufC0 .attachedBars-2BCP3l {
+    border-radius: 0;
+    background-color: var(--background-secondary-alt);
+  }
+  .chatContent-3KubbW .form-3gdLxP .channelTextArea-1FufC0 .attachedBars-2BCP3l .replyBar-1oi75v,
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .attachedBars-2BCP3l
+    .threadSuggestionBar-3ExSyc {
+    background-color: transparent;
+  }
+  .chatContent-3KubbW .form-3gdLxP .channelTextArea-1FufC0 .channelAttachmentArea-HwpkuQ {
+    margin-top: -11px;
+    margin-bottom: 5px;
+    margin-left: 0;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .channelAttachmentArea-HwpkuQ
+    + .divider-2rZFJK {
+    display: none;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .channelAttachmentArea-HwpkuQ
+    .wrapper-2vIMkT {
+    background-color: var(--background-floating);
+  }
+  .chatContent-3KubbW .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h {
+    padding: 15px;
+    overflow-y: unset;
+  }
+  .chatContent-3KubbW .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h .inner-NQg18Y {
+    padding-left: 0;
+    width: 100%;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    > button
+    ~ .expression-picker-chat-input-button:not(:nth-child(4)) {
+    display: none;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .emojiButton-3FRTuj {
+    display: flex !important;
+    order: -1;
+    position: absolute;
+    left: -50px;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .emojiButton-3FRTuj
+    .button-f2h6uQ {
+    background-color: transparent;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5 {
+    margin: 0;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5::before {
+    display: none;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5
+    .button-f2h6uQ {
+    margin-right: 0;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5
+    .button-f2h6uQ
+    .innerButton-1aF_E_ {
+    margin-left: 2px;
+    margin-right: 0;
+    transition: background-color 200ms ease;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5
+    .button-f2h6uQ
+    .innerButton-1aF_E_
+    svg {
+    opacity: 0.25;
+    transition: all 200ms ease;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5
+    .button-f2h6uQ:not([disabled]) {
+    background-color: var(--channeltextarea-sendbutton-background);
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5
+    .button-f2h6uQ:not([disabled]):hover {
+    background-color: var(--channeltextarea-sendbutton-hover);
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5
+    .button-f2h6uQ:not([disabled]):active {
+    background-color: var(--channeltextarea-sendbutton-active);
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .buttons-uaqb-5
+    .separator-3ng7S5
+    .button-f2h6uQ:not([disabled])
+    svg {
+    opacity: 1;
+    color: var(--channeltextarea-sendbutton-icon);
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .attachButton-1ijpt9
+    .attachButtonPlus-3IYelE {
+    d: path("M10.6667 4V10.6667H4V13.3333H10.6667V20H13.3333V13.3333H20V10.6667H13.3333V4H10.6667Z");
+    fill: var(--channeltextarea-button-icon);
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .attachButton-1ijpt9
+    .attachButtonPlay-1ATmb5 {
+    display: none;
+  }
+  .chatContent-3KubbW
+    .form-3gdLxP
+    .channelTextArea-1FufC0
+    .scrollableContainer-15eg7h
+    .inner-NQg18Y
+    .characterCount-8yNPfb {
+    right: unset;
+    bottom: 0;
+    left: 15px;
+  }
+  .chatContent-3KubbW .form-3gdLxP .typing-2J1mQU {
+    top: -24px;
+    right: 0;
+    left: 0;
+    padding-right: 5px;
+    border-bottom: 1px solid var(--background-primary);
+    background-color: var(--background-secondary-alt);
+  }
+  .chatContent-3KubbW .scrollerSpacer-3AqkT9 {
+    height: 25px;
+  }
+
+  #app-mount .drawerSizingWrapper-1txdWG {
+    right: 114px;
+  }
+  #app-mount .drawerSizingWrapper-1txdWG .navList-YSb9UB #emoji-picker-tab {
+    order: 1;
+    margin-left: 0;
+  }
+  #app-mount .drawerSizingWrapper-1txdWG .navList-YSb9UB #sticker-picker-tab {
+    order: 2;
+  }
+  #app-mount .drawerSizingWrapper-1txdWG .navList-YSb9UB #gif-picker-tab {
+    order: 3;
+    margin-left: 8px;
+  }
+  #app-mount .autocomplete-3jLKbj {
+    bottom: 100%;
+    padding-left: 8px;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: var(--background-secondary-alt);
+  }
+  #app-mount .autocomplete-3NRXG8 {
+    bottom: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: var(--background-secondary-alt);
+  }
+  #app-mount .autocomplete-3NRXG8 .categoryHeader-OpJ1Ly {
+    background-color: var(--background-secondary-alt);
+  }
+  #app-mount .attachedBars-2BCP3l ~ .autocomplete-3jLKbj,
+  #app-mount .attachedBars-2BCP3l ~ .autocomplete-3NRXG8 {
+    border-bottom: 1px solid var(--background-primary);
+  }
+  #app-mount .stickerIconOffset-2zxofV {
+    display: none;
+  }
+/* Flashcord - Settings Modal Code */
+
+/* Settings Modal CSS from mwittrien (Stolen Code Gaming)*/
+	#app-mount .baseLayer-W6S8cY {
+		opacity: 1 !important;
+		transform: unset !important;
+		will-change: unset !important;
+	}
+	#app-mount .stop-animations * {
+		transition-property: inherit !important;
+		animation: inherit !important;
+		filter: blur(1px);
+	}
+	#app-mount .layer-86YKbF.stop-animations:first-child::after {
+		content: "Test" !important;
+		position: fixed !important;
+		background: rgb(0, 0, 0) !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		opacity: 0.1 !important;
+		z-index: 999 !important;
+		pointer-events: none !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF {
+		position: absolute !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		background: var(--settingsmodalbackground) !important;
+		border-radius: 5px !important;
+		box-shadow: var(--elevation-high) !important;
+		width: var(--settingsmodalwidth) !important;
+		height: var(--settingsmodalheight) !important;
+		margin: auto !important;
+		padding: 0 !important;
+		overflow: hidden !important;
+		contain: unset !important;
+		z-index: 1000 !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF > div,
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j {
+		position: static !important;
+		border-radius: unset !important;
+		width: 100% !important;
+		height: 100% !important;
+		margin: unset !important;
+		padding: unset !important;
+		overflow: hidden !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-nqHbhN {
+		width: 218px !important;
+		padding: 20px 6px 20px 20px !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .repoHeader-2KfNvH {
+		padding-bottom: 0 !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .repoScroller-9JnAPs {
+		padding-top: 0 !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-3K3Z4C {
+		height: var(--settingsmodalheight) !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j .editor {
+		height: calc(var(--settingsmodalheight) - 120px) !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V,
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .tools-kIrEGr,
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .container-O54IuJ,
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .closeButton-PCZcma {
+		position: absolute !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		background: transparent !important;
+		border: none !important;
+		border-radius: 0 !important;
+		width: 100% !important;
+		max-width: unset !important;
+		height: 100% !important;
+		max-height: unset !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		opacity: 0 !important;
+		cursor: default !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V {
+		position: fixed !important;
+		top: 22px !important;
+		z-index: -1 !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .settingsToolbar-wu4yfQ {
+		display: none !important;
+	}
+	#app-mount .layer-86YKbF ~ .layer-86YKbF .header-2Kx1US {
+		max-width: calc(var(--settingsmodalwidth) - 730px) !important;
+	}
+	#app-mount .root-2zfUH6 {
+		position: fixed !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		background: var(--settingsmodalbackground) !important;
+		border-radius: 5px !important;
+		box-shadow: var(--elevation-high) !important;
+		width: var(--settingsmodalwidth) !important;
+		height: var(--settingsmodalheight) !important;
+		margin: auto !important;
+		padding: 0 !important;
+		overflow: hidden !important;
+		contain: unset !important;
+		z-index: 1000 !important;
+	}
+	#app-mount .root-2zfUH6.enterDone-menWZ8 {
+		transform: unset !important;
+	}
+	#app-mount .perksModal-CLcR1c {
+		position: static !important;
+		border-radius: unset !important;
+		width: 100% !important;
+		height: 100% !important;
+		margin: unset !important;
+		padding: unset !important;
+	}
+	#app-mount .perksModal-CLcR1c::before {
+		width: var(--settingsmodalwidth) !important;
+		height: var(--settingsmodalheight) !important;
+		margin: auto !important;
+	}
+	#app-mount .perksModalContentWrapper-3RHugb {
+		padding: 10px 0 10px !important;
+	}
+	#app-mount .root-2zfUH6 .perksModal-CLcR1c .carousel-3dvee9 {
+		margin-left: calc(-0.5 * (100vw - var(--settingsmodalwidth))) !important;
+	}
+	#app-mount .root-2zfUH6 .closeWrapper-1aVqeP,
+	#app-mount .root-2zfUH6 .closeWrapper-1aVqeP .closeContent-1uXQiy,
+	#app-mount .root-2zfUH6 .closeWrapper-1aVqeP .container-O54IuJ,
+	#app-mount .root-2zfUH6 .closeWrapper-1aVqeP .closeButton-PCZcma {
+		position: absolute !important;
+		top: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		background: transparent !important;
+		border: none !important;
+		border-radius: 0 !important;
+		width: 100% !important;
+		max-width: unset !important;
+		height: 100% !important;
+		max-height: unset !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		opacity: 0 !important;
+		cursor: default !important;
+	}
+	#app-mount .root-2zfUH6 .closeWrapper-1aVqeP {
+		position: fixed !important;
+		top: 22px !important;
+		z-index: -1 !important;
+	}
+/* Flashcord - Dark Mode Troll */
+
+  .theme-dark {
+    --background-primary: #FFFFFF;
+    --background-secondary: #FFFFFF;
+    --background-secondary-alt: #FFFFFF;
+    --background-tertiary: #FFFFFF;
+    --background-accent: #FFFFFF;
+    --background-floating: #FFFFFF;
+    --background-nested-floating: #FFFFFF;
+    --black: #FFFFFF;
+    --white: #FFFFFF;
+  }
