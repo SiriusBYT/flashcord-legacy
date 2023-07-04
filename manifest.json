@@ -7,7 +7,7 @@
     "discordID": "311057290562371586",
     "github": "replugged-org"
   },
-  "version": "Legacy",
+  "version": "LegacyLocal",
   "updater": {
     "type": "github",
     "id": "SiriusBYT/flashcord-legacy"
