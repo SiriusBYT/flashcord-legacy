@@ -1,6 +1,6 @@
 {
   "name": "Flashcord Legacy",
-  "version": "Legacy_Final",
+  "version": "Legacy-Final",
   "description": "The first version of Flashcord. A true disaster. The question now is... BUT CAN YOUR PC RUN FLASHCORD LEGACY?",
   "engines": {
     "node": ">=18.0.0",
