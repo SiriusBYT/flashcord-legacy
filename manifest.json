@@ -1,19 +1,22 @@
 {
-  "id": "com.sirio-network.flashcord-legacy",
-  "name": "Flashcord Legacy",
-  "description": "The first version of Flashcord. A true disaster. The question now is... BUT CAN YOUR PC RUN FLASHCORD LEGACY?",
-  "author": {
-    "name": "SiriusBYT",
-    "discordID": "311057290562371586",
-    "github": "SiriusBYT"
-  },
-  "version": "LegacyFinal",
-  "updater": {
-    "type": "github",
-    "id": "SiriusBYT/flashcord-legacy"
-  },
-  "license": "GPLv2",
-  "type": "replugged-theme",
-  "main": "src/main.css"
-  "source": "https://github.com/SiriusBYT/flashcord-legacy"
+	"id": "com.sirio-network.flashcord-legacy",
+	"name": "Flashcord Legacy",
+	"description": "The first version of Flashcord. A true disaster. The question now is... BUT CAN YOUR PC RUN FLASHCORD LEGACY?",
+	"author": {
+		"name": "SiriusBYT",
+		"discordID": "311057290562371586",
+		"github": "SiriusBYT"
+	},
+	"version": "LegacyFinal",
+	"updater": {
+            "type": "github",
+            "id": "SiriusBYT/flashcord-legacy"
+	},
+	"license": "GPLv2",
+	"type": "replugged-theme",
+	"main": "src/main.css",
+	"image": [
+		"https://cdn.discordapp.com/attachments/1145098346608984104/1145098636838056086/TabTip_uL6JMWPEWJ.gif"
+	],
+	"source": "https://github.com/SiriusBYT/flashcord-legacy"
 }
