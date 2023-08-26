@@ -1,13 +1,13 @@
 {
-  "id": "com.sirio-network.flashcordlegacy",
+  "id": "com.sirio-network.flashcord-legacy",
   "name": "Flashcord Legacy",
-  "description": "BUT CAN YOUR PC RUN FLASHCORD LEGACY?",
+  "description": "The first version of Flashcord. A true disaster. The question now is... BUT CAN YOUR PC RUN FLASHCORD LEGACY?",
   "author": {
     "name": "SiriusBYT",
     "discordID": "311057290562371586",
     "github": "replugged-org"
   },
-  "version": "LegacyLocal",
+  "version": "Legacy_Final",
   "updater": {
     "type": "github",
     "id": "SiriusBYT/flashcord-legacy"
