@@ -12,7 +12,7 @@
     "type": "github",
     "id": "SiriusBYT/flashcord-legacy"
   },
-  "license": "MIT",
+  "license": "GPLv2",
   "type": "replugged-theme",
   "main": "src/main.css"
 }
