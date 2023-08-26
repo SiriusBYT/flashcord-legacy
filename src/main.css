@@ -119,7 +119,7 @@
       --info-warning-background: hsl(var(--status-yellow-600-hsl)/0.1);
       --info-warning-foreground: var(--status-yellow-600);
       --info-warning-text: var(--black-500);
-      --info-danger-background: #00FF00; /* Unknown Location */
+      --info-danger-background: rgba(0,0,0,0.25); 
       --info-danger-foreground: var(--status-red-530);
       --info-danger-text: var(--black-500);
       --info-help-background: #FFF0FF;
@@ -913,3 +913,55 @@
     --white: #FFFFFF;
   }
 */
+
+/* Flashcord - Transition / Hover Animations */
+
+    /* Channel List Slide on Hover */
+    .sidebar-1tnWFu {
+        z-index: 0;
+        position: relative;
+        transform: translatex(-11.5px);
+        margin-right: -200px;
+        transition: transform 300ms, margin-right 300ms;
+    }
+    .sidebar-1tnWFu:hover {
+        z-index: 0;
+        position: relative;
+        transform: translatex(0px);
+        margin-right: 0px;
+        transition: transform 300ms, margin-right 300ms;
+    }
+
+    /* Settings Category Hover Animation */
+    .mainContent-20q_Hp:hover, .themed-qqoYp3:hover, .memberInner--L4X2b:hover{
+        transition: transform 100ms;
+        transform: translatex(10px) scale(1.1);
+    }
+    .mainContent-20q_Hp, .themed-qqoYp3, .memberInner--L4X2b{
+        transition: transform 100ms;
+        transform: translatex(0px) scale(1);
+    }
+
+    /* Message Hover Buttons + Roles in Member List */
+    .buttonContainer-1502pf:hover, .membersGroup-2eiWxl:hover {
+        transition: opacity 100ms;
+        opacity: 1;
+    }
+    .buttonContainer-1502pf, .membersGroup-2eiWxl {
+        transition: opacity 100ms;
+        opacity: 0.25;
+    }
+
+    /* Member List Slide on Hover */
+    .container-2o3qEW, .membersWrap-3NUR2t {
+        position: relative;
+        transform: translatex(90px);
+        margin-left: -100px;
+        transition: transform 300ms, margin-left 300ms;
+    }
+    .container-2o3qEW:hover, .membersWrap-3NUR2t:hover {
+        position: relative;
+        transform: translatex(0px);
+        margin-left: -5px;
+        transition: transform 300ms, margin-left 300ms;
+    }
