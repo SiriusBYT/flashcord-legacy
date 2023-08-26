@@ -5,7 +5,7 @@
   "author": {
     "name": "SiriusBYT",
     "discordID": "311057290562371586",
-    "github": "replugged-org"
+    "github": "SiriusBYT"
   },
   "version": "Legacy_Final",
   "updater": {
@@ -15,4 +15,5 @@
   "license": "GPLv2",
   "type": "replugged-theme",
   "main": "src/main.css"
+  "source": "https://github.com/SiriusBYT/flashcord-legacy"
 }
