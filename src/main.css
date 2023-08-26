@@ -41,7 +41,7 @@
 
   /* Declared Keyframes */
 
-  @keyframes FadeFromTop { /* IS THAT A WEBSIRIUS REFERENCE?i,I?,i,?I https://sirio-network.com/css/SiriusBYT-Home.css */
+  @keyframes FadeFromTop { /* IS THAT A WEBSIRIUS REFERENCE?i,I?,i,?I https://sirio-network.com/css/SiriusBYT-Home.css | Sirius from 2023: lul dead link */
       0% {
         opacity: 0.25;
         transform: translateY(-2vw)
@@ -358,7 +358,7 @@
     
 /* Flashcord - Bubble Bar Code */
 
-/* Bubble Bar Chat Bar (Stolen Code) */
+/* Bubble Bar Chat Bar (Stolen Code from https://github.com/discord-extensions/bubble-bar) */
   :root {
     /* || Main */
     --channeltextarea-rounding: 25px;
@@ -734,7 +734,7 @@
   }
 /* Flashcord - Settings Modal Code */
 
-/* Settings Modal CSS from mwittrien (Stolen Code Gaming)*/
+/* Settings Modal CSS from mwittrien (Stolen Code from https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal) */
 	#app-mount .baseLayer-W6S8cY {
 		opacity: 1 !important;
 		transform: unset !important;
@@ -899,7 +899,7 @@
 		top: 22px !important;
 		z-index: -1 !important;
 	}
-/* Flashcord - Dark Mode Troll */
+/* Flashcord - Dark Mode Troll... Is no more. Barely worked in the first place.
 
   .theme-dark {
     --background-primary: #FFFFFF;
@@ -912,3 +912,4 @@
     --black: #FFFFFF;
     --white: #FFFFFF;
   }
+*/
